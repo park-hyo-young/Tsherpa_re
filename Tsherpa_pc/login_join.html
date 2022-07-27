@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap">
+        <div role="header" data-include="header-before.html"></div>
+        <div class="join-user-area">
+            <div class="inner">
+                <h2 class="title-style mt60">학생 회원가입</h2>
+                <table summary="학생 회원가입">
+                    <caption>학생 회원가입</caption>
+                    <colgroup>
+                        <col style="width: 145px">
+                        <col style="width: calc(100% - 145px);">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="inform-title"><span class="certify-mark">아이디</span></th>
+                            <td class="inform-body">네이버로 로그인</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="inform-title"><span class="certify-mark">번호</span></th>
+                            <td class="inform-body"><input type="text" placeholder="반 번호를 입력하세요"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="inform-title"><span class="certify-mark">이름</span></th>
+                            <td class="inform-body"><input type="text" placeholder="5자 이내 실명으로 입력"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="inform-title"><span class="certify-mark">휴대폰 번호</span></th>
+                            <td class="inform-body">
+                                <input type="text" placeholder="숫자만 입력하세요">
+                                <a href="#none" class="btns small">인증번호 발송</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="inform-title"><span class="certify-mark">인증번호</span></th>
+                            <td class="inform-body">
+                                <input type="text" placeholder="인증 번호 6자리">
+                                <span class="time">03:00</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="inform-title">초대코드</th>
+                            <td class="inform-body">
+                                <input type="text" placeholder="선생님이 알려준 코드를 입력하세요">
+                                <p>* 초대 코드는 미입력 후 가입 가능하나, 일부 서비스에 제한이 있을 수 있습니다.</p>
+                                <p>* 초대 코드를 잊어버렸을 경우, 선생님께 문의해주세요.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="checkbox-area flex-center">
+                    <input type="checkbox" id="user-terms">
+                    <label for="user-terms">회원가입에 필요한 내용을 확인하였으며, 이에 동의합니다.</label>
+                    <a href="#none" class="show-user-terms">이용약관 보기</a>
+                </div>
+                <a href="#none" class="btns mt30">회원가입</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

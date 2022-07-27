@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap popup-pos">
+        <!-- 헤더 불러오는 태그 -->
+        <div role="header" data-include="header-tea.html"></div>
+        <div class="title-arer">
+            <h2>학급관리</h2>
+            <p>학급 추가, 삭제, 정보 변경 등은 PC에서만 가능합니다. </p>
+        </div>
+        <!-- 개설된 학급 없을 시 -->
+        <!-- <div class="main-content-none-area">
+            <figure><img src="images/mo_img_class_none.png" alt="개설된 학급이 없습니다."></figure>
+            <h4>개설된 학급이 없습니다.</h4>
+            <p>PC에서 클래스를 개설 후 이용해주세요</p>
+        </div> -->
+        <!-- 개설된 학급 있을 시 -->
+        <div class="offcial-content-area class-offcial">
+            <div class="offcial-inner">
+                <div class="swiper class-offcial-box">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- 기본학급 지정 시 basic-class 넣고 아니면 other-class 넣기 -->
+                            <span class="top-mack basic-class">기본 학급</span>
+                            <figure><img src="images/mo_img_default.png" alt="학급 화면"></figure>
+                            <h5>1학년 1반</h5>
+                            <p>학생 30명</p>
+                            <a href="#none" class="btns basic_btn"><img src="images/mo_ic_student.png" alt="학생관리">학생관리</a>
+                            <div class="stu-code-box flex-btw">
+                                <span>초대코드</span>
+                                <p>569874</p>
+                                <a href="#none"><img src="images/mo_ic_share.png" alt="공유하기"></a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <span class="top-mack other-class">기본 학급</span>
+                            <figure><img src="images/mo_img_default.png" alt="학급 화면"></figure>
+                            <h5>1학년 1반</h5>
+                            <p>학생 30명</p>
+                            <a href="#none" class="btns basic_btn"><img src="images/mo_ic_student.png" alt="학생관리">학생관리</a>
+                            <div class="stu-code-box flex-btw">
+                                <span>초대코드</span>
+                                <p>569874</p>
+                                <a href="#none"><img src="images/mo_ic_share.png" alt="공유하기"></a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <span class="top-mack other-class">기본 학급</span>
+                            <figure><img src="images/mo_img_default.png" alt="학급 화면"></figure>
+                            <h5>1학년 1반</h5>
+                            <p>학생 30명</p>
+                            <a href="#none" class="btns basic_btn"><img src="images/mo_ic_student.png" alt="학생관리">학생관리</a>
+                            <div class="stu-code-box flex-btw">
+                                <span>초대코드</span>
+                                <p>569874</p>
+                                <a href="#none"><img src="images/mo_ic_share.png" alt="공유하기"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-share">
+            <div class="share-box">
+                <div class="popup-header flex-btw"> 
+                    <span>공유하기</span>
+                    <a href="#none"><img src="images/mo_ico_close_white.png" alt="창 닫기"></a>
+                </div>
+                <div class="share-icon-box flex-start">
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_blog.png" alt="블로그">블로그</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_cafe.png" alt="카페">카페</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_keep.png" alt="Keep">Keep</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_memo.png" alt="메모">메모</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_band.png" alt="밴드">밴드</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_line.png" alt="라인">라인</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_friend.png" alt="친구">친구</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_kakao.png" alt="카카오톡">카카오톡</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_twitter.png" alt="트위터">트위터</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_facebook.png" alt="페이스북">페이스북</a>
+                    <a href="#none" class="share-btn"><img src="images/mo_ic_mail.png" alt="메일">메일</a>
+                    <div class="link-copy flex-btw">
+                        <a href="#none" class="link-code">http://m.blog.naver.com/p</a>
+                        <a href="#none" class="url-copy">URL복사</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

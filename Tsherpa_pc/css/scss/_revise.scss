@@ -1,0 +1,231 @@
+// revisc -> revise로 변경(파일명 포함)
+.revise-inner {
+    width: 1370px;
+    margin: 0 auto;
+    .revise-form-left {
+        width: 260px;
+        height: calc(100vh - 65px);
+        background-color: $background-color;
+        box-shadow: 2px 1px 3px rgba(0,0,0,0.1);
+        .revise-heading {
+            padding: 60px 0 50px;
+            background-color: #e0eaf5;
+            text-align: center;
+            p {
+                font-size: 18px;
+                letter-spacing: -.38px;
+            }
+            strong {
+                display: block;
+                padding: 15px 0 30px;
+                font-size: 24px;
+                font-weight: bold;
+                letter-spacing: -.9px;
+            }
+            figure {
+                width: 140px;
+                height: 140px;
+                margin: 0 auto;
+                border-radius: 50%;
+                background-color: $white;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        > nav {
+            padding: 20px;
+            a {
+                display: block;
+                padding: 17px 0 18px 20px;
+                border-bottom: 1px solid $border-color;
+                color: #666;
+                font-size: 15px;
+                font-weight: 500;
+                &.active {
+                    color: $main-color;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .revise-form-right {
+        width: 910px;
+        margin: 64px 100px 0;
+        .title-style {
+            margin-bottom: 53px;
+        } 
+        .revise-table {
+            width: 910px;
+            border-radius: 6px;
+            border-style: hidden;
+            box-shadow: 0 0 0 1px $border-color;
+            tr {
+                &:first-child {
+                    th {
+                        border-radius: 6px 0 0 0;
+                    }
+                }
+                &:last-child {
+                    th {
+                        border-radius: 0 0 0 6px;
+                    }
+                }
+                th, td {
+                    padding: 0 20px;
+                    border: 1px solid $border-color;
+                    text-align: left;
+                    vertical-align: middle;
+                }
+                th {
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: -.4px;
+                    background-color: #f0f3f7;
+                }
+                td {
+                    color: #666;
+                    font-size: 14px;
+                    letter-spacing: -.35px;
+                    span {
+                        display: block;
+                        padding: 19px 0 17px;
+                    }
+                    .btns {
+                        width: 108px;
+                    }
+                    .revise-text-box {
+                        margin: 11px 0;
+                        height: 36px;
+                        line-height: 34px;
+                        color: #666;
+                        line-height: 14px;
+                        &.class-num {
+                            width: 160px;
+                        }
+                        &.class-invite-code {
+                            width: 365px;
+                            &::placeholder {
+                                color: #666;
+                            }
+                        }
+                        &.class-phone-num {
+                            margin: 11px 10px;
+                            width: 100px;
+                        }
+                    }
+                    p {
+                        float: right;
+                        padding-top: 13px;
+                        padding-right: 45px;
+                        color: #bbb;
+                        font-size: 12px;
+                        line-height: 16px;
+                        letter-spacing: -.3px;
+                    }
+                    select {
+                        width: 100px;
+                        height: 36px;
+                        margin: 11px 10px 11px 0;
+                        padding: 0 11px;
+                        border-radius: 6px;
+                        border: 1px solid $border-color;
+                        color: #666;
+                        line-height: 34px;
+                        appearance: none;
+                        background: url('../images/ic-dropdown.png') right 5px center no-repeat;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+        > a {
+            width: 180px;
+            font-weight: normal;
+            letter-spacing: -.32px;
+        }
+        .top-text-box {
+            p {
+                span {
+                    color: $main-color;
+                    font-weight: bold;
+                }
+            }
+            .search-box {
+                width: 240px;
+                height: 36px;
+                margin-bottom: 20px;
+                padding-left: 13px;
+                border-radius: 6px;
+                line-height: 34px;
+                border: 1px solid $border-color;
+                input {
+                    width: 190px;
+                    border: 0;
+                    border-radius: 0;
+                    padding: 0;
+                    color: #747774;
+                    &::placeholder {
+                        color: #747774;
+                    }
+                }
+                >a {
+                    display: block;
+                    position: relative;
+                    width: 14px;
+                    height: 14px;
+                    margin: 0 10px;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        border: 1px solid #666;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 1px;
+                        height: 4px;
+                        bottom: 0;
+                        right: 1px;
+                        background-color: #666;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        .notice-table {
+            width: 910px;
+            th,td {
+                border: 1px solid $border-color;
+                border-right: 0;
+                border-left: 0;
+                font-size: 15px;
+                background-color: $white;
+            }
+            thead {
+                height: 40px;
+                line-height: 38px;
+            }
+            tbody {
+                height: 58px;
+                line-height: 56px;
+                td {
+                    padding: 0 20px;
+                    color: #000;
+                }
+            }
+        }
+        > .page-move-btns {
+            position: relative;
+            .btns {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}

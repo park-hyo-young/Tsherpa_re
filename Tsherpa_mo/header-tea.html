@@ -1,0 +1,82 @@
+<header>
+   <div class="inner cf">
+       <h1><a href="#none"><img src="images/mo_logo.png" alt="우리반 티셀파"></a></h1>
+       <a href="#none" class="nav_btn"><img src="images/mo_ico_menu.png" alt="메뉴버튼"></a>
+   </div>
+</header>
+<div class="menu-list-area popup-pos tea-list-popup">
+   <div class="menu-inner">
+       <div class="list-popup flex-btw">
+           <h2><a href="#none"><img src="images/mo_ic_home.png" alt="홈화면으로"></a></h2>
+           <a href="#none"><img src="images/mo_icon_close.png" alt="메뉴 닫기"></a>
+       </div>
+        <!-- 개설된 클래스 없을 시 -->
+        <figure class="none-class-box">
+           <img src="images/mo_img_class.png" alt="개설된 클래스가 없습니다. ">
+        </figure>
+        <div class="none-class-ment">
+           <strong>개설된 클래스가 없습니다.</strong>
+           <p>
+               PC에서 클래스를 개설한 후<br>
+               이용해주세요
+           </p>
+        </div>
+        <!-- 개설된 클래스 있을 시 -->
+        <figure class="have-class-box">
+           <img src="images/3.svg" alt="서울 가산 초등학교">
+        </figure>
+        <div class="have-class-ment">
+            <p>서울 가산초등학교</p>
+            <strong>3학년 3반<span>학급정원 20명</span></strong>
+            <div class="select-box">
+                <a href="#none" class="btns border-btn blue round">클래스 이동</a>
+                <ul class="option-list up">
+                    <li><a href="#none">3학년 3반</a></li>
+                    <li><a href="#none">4학년 우리반</a></li>
+                </ul>
+            </div>  
+        </div>
+        <ul class="menu-list-btn">
+            <li><a href="#none" class="flex-btw">공지사항<img src="images/mo_btn_next_02.png" alt="공지사항"></a></li>
+            <li><a href="#none" class="flex-btw">과제제출<img src="images/mo_btn_next_02.png" alt="과제제출"></a></li>
+            <li><a href="#none" class="flex-btw">수업자료<img src="images/mo_btn_next_02.png" alt="수업자료"></a></li>
+            <li><a href="#none" class="flex-btw">학급목록<img src="images/mo_btn_next_02.png" alt="학급목록"></a></li>
+        </ul>
+        <div class="menu-btn-group flex-btw">
+            <a href="#none" class="btns border-btn">온라인 퀴즈</a>
+            <a href="#none" class="btns border-btn">온라인 평가</a>
+            <a href="#none" class="btns border-btn">우리반 AI수학</a>
+            <a href="#none" class="btns border-btn">하루하나WEB</a>
+            <a href="#none" class="btns border-btn">수업 소통 도구</a>
+            <a href="#none" class="btns border-btn">T셀파 커넥트</a>    
+            <a href="#none" class="btns">티셀파 메인</a>
+            <a href="#none" class="btns">로그아웃</a>
+        </div>
+    </div>
+</div>
+
+<script>
+   // 메뉴 열기
+   $('.nav_btn').on('click',function(e){
+        e.preventDefault();
+        $('.menu-list-area').show();
+        $('.menu-list-area').stop().animate({'left':'0'},300);
+    });
+    // 메뉴닫기
+    $('.list-popup > a').on('click',function(e){
+        e.preventDefault();
+      //   $('.menu-list-area').hide();
+        $('.menu-list-area').stop().animate({'left':'-100%'},300);
+    });
+
+   $('.select-box > a').on('click', function(e){
+      e.preventDefault();
+      if($('.select-box > .option-list').hasClass('up') === true) {
+         $('.option-list').removeClass('up');
+         $('.option-list').slideDown(300);
+      } else {
+         $('.option-list').addClass('up');
+         $('.option-list').slideUp(300);
+      }
+   });
+</script>

@@ -1,0 +1,90 @@
+.membership-arer {
+    padding: 4rem 2rem 4.5rem;
+    form {
+        h4 {
+            margin-bottom: 5.3rem;
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: -0.09rem;
+        }
+        > input {
+            margin: 1.6rem 0 3.2rem;
+        }
+        .phone-num-text {
+            margin-top: 1.6rem;
+        }
+        .membership-code-margin {
+            margin-bottom: 1.2rem;
+        }
+        .membership-code-ment {
+            position: relative;
+            padding-left: 0.8rem;
+            color: #bbb;
+            word-break: keep-all;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            letter-spacing: -0.048rem;
+            &::before {
+                position: absolute;
+                content: '*';
+                left: 0;
+                top: 0.3rem;
+                color: #bbb;
+                font-size: 1.2rem;;
+            }
+        }
+        .checkbox-arer {
+            margin: 3.1rem 0 1.6rem;
+            input[type="checkbox"] {
+                &:checked {
+                    & + label::after {
+                        margin-left: -30.4rem;
+                    }
+                }
+            }
+            label {
+                letter-spacing: -0.1rem;
+            }
+        }
+        .show-user-conditions {
+            display: block;
+            position: relative;
+            margin-bottom: 3.5rem;
+            color: #666;
+            font-size: 1.3rem;
+            text-align: center;
+            letter-spacing: -0.06rem;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 7.3rem;
+                height: 0.1rem;
+                bottom: -0.25rem;
+                background-color: #666;
+            }
+        }
+        > .basic_btn {
+            height: 5.2rem;
+            line-height: 5.2rem;
+        }
+        .phone-group {
+            a {
+                width: 10rem;
+            }
+        }
+        .code-box {
+            position: relative;
+            margin: 1.6rem 0 3.15rem;
+            .time {
+                position: absolute;
+                top: 50%;
+                right: 1.5rem;
+                transform: translateY(-50%);
+                color: #666;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}  

@@ -1,0 +1,314 @@
+.login-main-area {
+    position: relative;
+    height: 100%;
+    background: $background-color url('../images/back-pattern.png') 
+    top center no-repeat;
+    background-size: 100%;
+    .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .login-btn-group {
+        padding: 0 60px;
+        .login-btn-area {
+            position: relative;
+            overflow: hidden;
+            width: 520px;
+            height: 320px;
+            padding: 110px 50px 50px 40px;
+            border-radius: 20px;
+            > p {
+                position: relative;
+                margin-bottom: 30px;
+                color: $white;
+                font-size: 36px;
+                font-weight: 500;
+                letter-spacing: -.9px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    z-index: 1;
+                }
+            }
+            > a {
+                width: 123px;
+                height: 45px;
+                margin: 0;
+                border-radius: 12px;
+                font-size: 18px;
+                line-height: 43px;
+                font-weight: normal;
+                background-color: $white;
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                width: 277px;
+                height: 277px;
+                top: -35px;
+                right: -44px;
+                border-radius: 50%;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                width: 180px;
+                height: 180px;
+                bottom: -21px;
+                right: 130px;
+                border-radius: 50%;
+                opacity: 0.3;
+            }
+            &.login-tea {
+                background-color: $main-color;
+                >p {
+                    &::before {
+                        width: 124px;
+                        height: 131px;
+                        top: 29px;
+                        background: url('../images/ic-teacher.png') no-repeat;
+                    }
+                }
+                > a {
+                    color: $main-color;
+                }
+                &::before {
+                    background: linear-gradient(to top, $main-color, #5da9eb);
+                }
+                &::after {
+                    background: linear-gradient(to top, $main-color, #5da9eb);
+                }
+            }
+            &.login-stu {
+                background-color: #ff7e00;
+                >p {
+                    &::before {
+                        width: 111px;
+                        height: 111px;
+                        top: 49px;
+                        background: url('../images/ic-student.png') no-repeat;
+                    }
+                }
+                > a {
+                    color: #ff7e00;
+                }
+                &::before {
+                    background: linear-gradient(to top, #ff7e00, #ff9f42);
+                }
+                &::after {
+                    background: linear-gradient(to top, #ff7e00, #ff9f42);
+                }
+            }
+        }
+    }
+}
+.login-stu-main-area {
+    height: 100%;
+    min-height: 1000px;
+    background-color: $background-color;
+    .title-style {
+        padding: 80px 0 50px;
+    }
+    .login-form {
+        padding: 52px 0 50px;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        text-align: center;
+        background-color: $white;
+        > h4 {
+            font-size: 23px;
+            font-weight: bold;
+            letter-spacing: -.92px;
+        }
+        > p {
+            margin: 10px 0 25px;
+            color: #666;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -.35px;
+            &.have-login-ment {
+                margin: 30px 0 60px;
+                letter-spacing: -.56px;
+            }
+        }
+        .search-result-user {
+            display: block;
+            margin-top: 21px;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: -.8px;
+            &.user-none {
+                margin-top: 10px;
+                font-weight: normal;
+                line-height: 30px;
+            }
+        }
+        .user-none-btn {
+            margin: 30px auto 10px;
+        }
+        > form {
+            label {
+                color: #666;
+                font-size: 16px;
+            }
+            .login-pass-area {
+                margin: 6px 0 14px;
+            }
+            > .checkbox-area {
+                margin-bottom: 20px;
+            }
+            &.login-student-area {
+                padding: 0 275px;
+                input[type="text"] {
+                    width: calc(100% - 85px);
+                    height: 34px;
+                }
+                label {
+                    margin-right: 25px;
+                }
+            }
+        }
+        .login-search-area {
+            margin: 40px 0 60px;
+
+            label {
+                width: 80px;
+                margin-right: 10px;
+                text-align: right;
+            }
+            input[type="text"] {
+                width: 244px;
+                height: 34px;
+            }
+            a, span {
+                width: 118px;
+                margin-left: 4px;
+            }
+            span {
+                color: #666;
+                font-size: 14px;
+                text-align: left;
+                &.disabled {
+                    color: #bbb;
+                }
+            }
+            .login-phone-area {
+                margin-bottom: 6px;
+                .btns {
+                    width: 118px;
+                    height: 34px;
+                    margin: 0 0 0 4px;
+                    line-height: 32px;
+                    color: #fefefe;
+                    font-size: 14px;
+                    letter-spacing: -.28px;
+                }
+
+            }
+        }
+        &.sns-login {
+            > h4 {
+                margin-bottom: 30px;
+            }
+            > .kakao-btn {
+                margin: 10px auto 30px;
+            }
+            .my-sns-search {
+                position: relative;
+                padding-bottom: 1px;
+                color: #666;
+                font-size: 13px;
+                letter-spacing: -.33px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #666;
+                }
+            }
+        }
+    }
+}
+.join-user-area {
+    table {
+        margin: 30px 0;
+        width: 100%;
+        border-radius: 6px;
+        border-style: hidden;
+        text-align: left;
+        box-shadow: 0 0 0 1px $border-color;
+        caption {
+            display: none;
+        }
+        tr {
+            th, td {
+                padding: 18px 20px;
+                border: 1px solid $border-color;
+            }
+            th, .certify-mark {
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: -.4px;
+                background-color: #f0f3f7;
+
+            }
+            &:first-child {
+                th {
+                    border-radius: 6px 0 0 0;
+                }
+            }
+            &:last-child {
+                th {
+                    border-radius: 0 0 0 6px;
+                }
+            }
+            .inform-body {
+                color: #666;
+                font-size: 14px;
+                letter-spacing: -.35px;
+                >input {
+                    width: 244px;
+                    height: 36px;
+                }
+                >.btns {
+                    width: 118px;
+                    margin: 0 0 0 5px;
+                    letter-spacing: -.35px;
+                }
+                .time {
+                    margin-left: 5px;
+                    color: #666;
+                    font-size: 14px;
+                }
+                > p {
+                    margin-top: 9px;
+                    color: #bbb;
+                    font-size: 12px;
+                    letter-spacing: -.3px;
+                }
+            }
+        }
+    }
+    .show-user-terms {
+        display: block;
+        margin-left: 10px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #666;
+        color: #666;
+        font-size: 13px;
+        letter-spacing: -.33px;
+    }
+    .inner {
+        > .btns {
+            width: 180px;
+            color: #fefefe;
+            font-weight: normal;
+        }
+    }
+}

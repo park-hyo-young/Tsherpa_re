@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 불러오는 태그 -->
+        <div role="header" data-include="header-login.html"></div>
+        <div class="login-student-arer">
+            <div class="inner-login">
+                <h4 class="stu-login-title">로그인</h4>
+                <p class="stu-login-ment">선생님이 만들어준 계정으로 로그인하기</p>
+                <form action="#">
+                    <input type="text" class="login-form border-padding" placeholder="아이디">
+                    <input type="password" class="login-form border-padding" placeholder="비밀번호">
+                    <div class="checkbox-arer flex-start">
+                        <input type="checkbox" id="checkbox-input" class="save-id">
+                        <label for="checkbox-input">아이디 저장하기</label>
+                    </div>
+                </form>
+                <a href="#none" class="btns basic_btn">로그인</a>
+                <p class="login-forget">
+                    선생님께서 아이디와 비밀번호를 발급해 준 경우,<br>
+                    정보를 잊어버린 학생은 선생님께 문의하세요.
+                </p>
+                <div class="sns-login-arer">
+                    <h4 class="stu-login-title">나의 SNS로 시작하기</h4>
+                    <a href="#none" class="btns naver_login"><img src="images/mo_ic_naver.png" alt="네이버로 시작하기">네이버로 시작하기</a>
+                    <a href="#none" class="btns kakao_login"><img src="images/mo_ico_kakao.png" alt="카카오로 시작하기">카카오로 시작하기</a>
+                    <a href="#none" class="login-forget-sns">나의 SNS 계정 찾기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

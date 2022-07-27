@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 불러오는 태그 -->
+        <div role="header" data-include="header-login.html"></div>
+        <div class="membership-arer">
+            <form action="#">
+                <h4>학생 회원가입</h4>
+                <label for="sns-id">아이디</label>
+                <input type="text" id="sns-id" disabled placeholder="네이버로 로그인/카카오로 로그인">
+                <label for="membership-num" class="vital-mark">번호</label>
+                <input type="text" id="membership-num" class="border-padding" placeholder="반 번호를입력하세요">
+                <label for="membership-name" class="vital-mark">이름</label>
+                <input type="text" id="membership-name" class="border-padding" placeholder="5자 이내 실명으로 입력">
+                <label for="membership-phone-number" class="vital-mark">휴대폰 번호</label>
+                <div class="phone-group flex-btw">
+                    <input type="text" id="membership-phone-number" class="phone-num-text border-padding" placeholder="숫자만 입력하세요">
+                    <a href="#none" class="btns border-btn">인증번호 발송</a>
+                </div>
+                <label for="membership-code">인증번호</label>
+                <div class="code-box">
+                    <input type="text" id="membership-code" class="border-padding" placeholder="인증번호 6자리">
+                    <span class="time">03:00</span>
+                </div>
+                <label for="membership-num">초대코드</label>
+                <input type="text" id="membership-num" class="membership-code-margin border-padding" placeholder="선생님이 알려준 코드를 입력하세요">
+                <p class="membership-code-ment">초대 코드는 미입력 후 가입 가능하나, 일부 서비스에 제한이 있을 수 있습니다.</p>
+                <p class="membership-code-ment">초대 코드를 잊어버렸을 경우, 선생님께 문의해주세요.</p>
+                <div class="checkbox-arer flex-start">
+                    <input type="checkbox" id="checkbox-input" class="save-id">
+                    <label for="checkbox-input">회원가입에 필요한 내용을 확인하였으며, 이에 동의합니다.
+                    </label>
+                </div>
+                <a href="#none" class="show-user-conditions">이용약관 보기</a>
+                <a href="#none" class="btns basic_btn">회원가입</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

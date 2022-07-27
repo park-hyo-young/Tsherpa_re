@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap popup-pos">
+        <!-- 헤더 불러오는 태그 -->
+        <div role="header" data-include="header-tea.html"></div>
+        <div class="title-arer">
+            <h2>학생관리</h2>
+            <p>계정 추가, 수정, 삭제 등은 PC에서만 가능합니다. </p>
+        </div>
+        <div class="student-offcial">
+            <div class="offcial-student-title">
+                <h5>3학년 3반</h5>
+                <div class="invite-code-box"><span class="invite-code-after">초대코드</span><span>568974</span></div>
+            </div>
+            <div class="inner">
+                <div class="student-list-menu flex-btw">
+                    <p>총 인원<span class="active"> 12명</span></p>
+                    <div class="list-menu-group">
+                        <a href="#none" class="active">번호순</a>
+                        <a href="#none">이름순</a>
+                    </div>
+                </div>
+                <!-- 등록된 학생 있을 시 -->
+                <div class="student-offcial-list">
+                    <table summary="학생관리">
+                        <caption>학생관리</caption>
+                        <colgroup>
+                            <col width="15%;">
+                            <col width="29%;">
+                            <col width="29%;">
+                            <col width="27%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름</th>
+                                <th>아이디</th>
+                                <th class="stu-pass-list">비밀번호<a href="#none" class="pass-hide"></a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>김셀파</td>
+                                <td>네이버 로그인</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>박셀파</td>
+                                <td>카카오톡 로그인</td>
+                                <td>****</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>오셀파</td>
+                                <td>sherpa1</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>이셀파</td>
+                                <td>student1</td>
+                                <td>****</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>이름은열글자까지</td>
+                                <td>카카오톡 로그인</td>
+                                <td>********</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>이셀파</td>
+                                <td>카카오톡 로그인</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>김셀파</td>
+                                <td>네이버 로그인</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>박셀파</td>
+                                <td>네이버 로그인</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>김셀파</td>
+                                <td>sherpanum1</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>이셀파</td>
+                                <td>student1</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>김셀파</td>
+                                <td>카카오톡 로그인</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>김셀파</td>
+                                <td>카카오톡 로그인</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="next-pagebtn-group flex-btw">
+                    <div class="pre-btns">
+                        <a href="#none" class="end-btn"><img src="images/mo_ic_first.png" alt="첫 페이지로"></a>
+                        <a href="#none" class="page-move"><img src="images/mo_btn_pre_02.png" alt="이전 페이지로"></a>
+                    </div>
+                    <a href="#none" class="page-num active">1</a>
+                    <a href="#none" class="page-num">2</a>
+                    <a href="#none" class="page-num">3</a>
+                    <a href="#none" class="page-num">4</a>
+                    <a href="#none" class="page-num">5</a>
+                    <div class="next-btns">
+                        <a href="#none" class="page-move"><img src="images/mo_btn_next_02.png" alt="다음 페이지로"></a>
+                        <a href="#none" class="end-btn"><img src="images/mo_btn_end.png" alt="마지막 페이지로"></a>
+                    </div>
+                </div>
+
+                <!-- 등록된 학생 없을 시 -->
+                <div class="student-offcial-list">
+                    <table>
+                        <caption>학생관리</caption>
+                        <colgroup>
+                            <col width="15%;">
+                            <col width="29%;">
+                            <col width="29%;">
+                            <col width="27%;">
+                        </colgroup>
+                        <tr>
+                            <th class="stu-num-list">번호</th>
+                            <th class="stu-name-list">이름</th>
+                            <th class="stu-id-list">아이디</th>
+                            <th class="stu-pass-list">비밀번호<a href="#none" class="pass-hide"></a></th>
+                        </tr>
+                    </table>
+                    <div class="student-offcial-list-none">
+                        <figure><img src="images/mo_ic_none_login.png" alt="등록된 학생이 없습니다"></figure>
+                        <p>
+                            등록된 학생이 없습니다.<br>
+                            학생들이 직접 가입할 수 있도록<br>
+                            초대코드를 알려주거나<br>
+                            PC를 통해 직접 학생 계정을 추가해 주세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

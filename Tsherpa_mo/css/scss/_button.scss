@@ -1,0 +1,76 @@
+// 수정사항 정리
+// 버튼 공통화 작업을 위해 따로 scss 파일 생성
+// _가 들어간 클래스명 -로 변경
+
+.btns {
+    display: block;
+    width: 100%;
+    height: 4.4rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+    color: $white;
+    font-size: 1.4rem;
+    line-height: 4.2rem;
+    text-align: center;
+    background-color: $main-color;
+
+    &.border-btn {
+        border: 0.1rem solid #bbb;
+        color: #666;
+        background-color: $white;
+        &.blue {
+            border-color: $main-color;
+            color: $main-color;
+        }
+        &.gray {
+            border-color: #bbb;
+            color: #bbb;
+        }
+        &.red {
+            border-color: #ff6652;
+            color: #ff6652;
+        }
+    }
+    &.disabled {
+        background-color: #ccc;
+    }
+    &.naver-btn {
+        background-color: #42be6f;
+        img {
+            width: 1.3rem;
+            height: 1.3rem;
+            margin-right: .5rem;
+        }
+    }
+    &.kakao-btn {
+        color: #191919;
+        background-color: #fee22b;
+        img {
+            width: 1.55;
+            height: 1.45rem;
+            margin-right: .5rem;
+        }
+    }
+    &.small {
+        width: 7rem;
+		height: 3.2rem;
+		line-height: 3rem;
+		font-size: 1.2rem;
+        font-weight: normal;
+	}
+	&.large {
+		width: 100%;
+		font-size: 16px;
+	}
+    &.finsh-btn {
+        background-color: #bbb;
+    }
+    img {
+        margin-right: .4rem;
+        margin-top: -.3rem;
+        vertical-align: middle;
+    }
+}
+.round {
+    border-radius: 3rem;
+}

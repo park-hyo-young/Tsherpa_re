@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <!-- 
+        - 수정사항 정리
+        - 주석 해제
+        - 버튼 공통화 적용
+     -->
+    <div class="wrap">
+        <!-- 헤더 불러오는 태그 -->
+        <div role="header" data-include="header-login.html"></div>
+        <div class="login-student-arer">
+            <div class="inner-login">
+                <!-- 계정 있을 시 --> 
+                <h4 class="stu-login-title">나의 SNS 계정 찾기</h4>
+                <p class="stu-login-ment">010*****123<br>김셀파님!</p>
+                <p class="have-login">네이버 계정으로<br>회원가입 한 이력이 있습니다.</p>
+                <a href="#none" class="btns naver-btn"><img src="images/mo_ic_naver.png" alt="네이버로 시작하기">네이버로 시작하기</a>
+
+                <!-- 계정 없을 시 -->
+                <h4 class="stu-login-title none-sns-login">나의 SNS 계정 찾기</h4>
+                <p class="none-sns-ment">
+                    일치하는 회원 정보가 없습니다.<br>
+                    나의 SNS를 통해 회원가입을 하신 후<br>
+                    우리반 티셀파를 이용해주시기 바랍니다.<br>
+                </p>
+                <a href="#none" class="btns naver-btn"><img src="images/mo_ic_naver.png" alt="네이버로 시작하기">네이버로 시작하기</a>
+                <a href="#none" class="btns kakao-btn"><img src="images/mo_ico_kakao.png" alt="카카오로 시작하기">카카오로 시작하기</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

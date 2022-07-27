@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 불러오는 태그 -->
+        <div role="header" data-include="header-stu.html"></div>
+        <div class="title-arer">
+            <h2>마이페이지</h2>
+            <p>회원 정보 수정 페이지 입니다.</p>
+        </div>
+        <div class="mypage-body-arer">
+            <form action="#">
+                <!-- 초대코드 없을 시 -->
+                <label for="mypage-class-num">반 번호</label>
+                <input type="text" id="mypage-class-num" class="border-padding" value="1">
+                <label for="mypage-stu-num">이름</label>
+                <input type="text" id="mypage-stu-num" class="color-666" disabled placeholder="김셀파">
+                <!-- sns로 로그인 시 -->
+                <label for="mypage-stu-id">아이디</label>
+                <input type="text" id="mypage-stu-id" class="color-666" disabled placeholder="네이버로 로그인">
+                <!-- sns로 로그인 아닐시 -->
+                <label for="mypage-stu-id">아이디</label>
+                <input type="text" id="mypage-stu-id" class="color-666" disabled placeholder="tsherpa1">
+                <!-- sns로 로그인 시 -->
+                <label for="mypage-stu-pass">비밀번호</label>
+                <input type="text" id="mypage-stu-pass" class="color-666" disabled placeholder="네이버로 로그인">
+                <!-- 비밀번호 변경 -->
+                <label for="mypage-stu-pass">비밀번호</label>
+                <input type="password" id="mypage-stu-pass" class="border-padding" placeholder="영문 소문자, 숫자 4글자 이상">
+                <label for="mypage-stu-pass-re">비밀번호 확인</label>
+                <input type="password" id="mypage-stu-pass-re" class="border-padding" placeholder="영문 소문자, 숫자 4글자 이상">
+                <label for="mypage-stu-phone">휴대폰 번호</label>
+                <input type="text" id="mypage-stu-phone" class="color-666" disabled placeholder="010-1111-1234">
+                <!-- 휴대폰번호 등록 전 -->
+                <label for="mypage-stu-phone">휴대폰 번호</label>
+                <div class="phone-num-group flex-btw">
+                    <input type="text" id="mypage-stu-phone" class="border-padding frist-num">-
+                    <input type="text" class="border-padding">-
+                    <input type="text" class="border-padding last-num">
+                </div>
+                <!-- 초대코드 입력 전 -->
+                <label for="mypage-stu-code">초대코드</label>
+                <input type="text" id="mypage-stu-code" class="border-padding code-bottom" placeholder="선생님이 알려준 코드 입력">
+                <p>초대 코드 미입력 시, 일부 서비스에 제한이 있을 수 있습니다.<br>초대 코드를 잊어버렸을 경우, 선생님께 문의해주세요.</p>
+                <!-- 초대코드 입력 시 -->
+                <label for="mypage-stu-code">초대코드</label>
+                <input type="text" id="mypage-stu-code" class="color-666" disabled placeholder="CJ0303">
+                <p>비밀번호 변경을 원치 않을 경우, 공백으로 두고 확인을 눌러주세요</p>
+                <a href="#none" class="btns basic_btn">확인</a>                
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

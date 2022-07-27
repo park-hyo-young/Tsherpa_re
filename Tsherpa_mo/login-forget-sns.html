@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 불러오는 태그 -->
+        <div role="header" data-include="header-login.html"></div>
+        <div class="login_found_title">
+            <div class="inner">
+                <h4>나의 SNS 계정 찾기</h4>
+                <p>핸드폰 번호 인증을 통해 계정을 찾아 드립니다.</p>
+            </div>
+        </div>
+        <form action="#" class="found-sns">
+            <div class="inner">
+                <label for="phone-number" class="vital-mark">핸드폰 번호</label>
+                <div class="phone-grup flex-btw">
+                    <input type="text" id="phone-number" class="phone-num-text border-padding" placeholder="숫자만 입력하세요">
+                    <!-- 인증번호 발송 전 -->
+                    <a href="#none" class="btns border_btn certify-btn">인증번호 발송</a>
+                </div>
+                <div class="phone-grup flex-btw">
+                    <input type="text" id="phone-number" class="phone-num-text border-padding" placeholder="숫자만 입력하세요">
+                    <!-- 인증번호 발송 후 -->
+                    <a href="#none" class="btns off_btn certify-btn">인증번호 발송</a>
+                </div>
+                <label for="certify-number" class="vital-mark">인증번호</label>
+                <div class="caritfy-grup border-padding flex-btw">
+                    <input type="text" id="certify-number" class="certify-num-text" placeholder="인증번호 6자리">
+                    <span>03:00</span>
+                </div>
+                <!-- 인증번호 발송 전 -->
+                <a href="#none" class="btns off_btn">확인</a>
+                <!-- 인증번호 발송 후 -->
+                <a href="#none" class="btns basic_btn">확인</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 

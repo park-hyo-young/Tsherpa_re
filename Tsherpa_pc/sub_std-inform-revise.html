@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <!-- 
+        수정사항 정리
+        - revisc -> revise로 변경
+     -->
+    <div class="revise-wrap wrap">
+        <div role="header" data-include="header-stu.html"></div>
+        <div class="revise-inner flex-start">
+            <div class="revise-form-left">
+                <div class="revise-heading">
+                    <p>서울가산초등학교</p>
+                    <strong>1-1 15번 김셀파</strong>
+                    <figure><!-- <img src="images/img-default-14.png" alt="학교 이미지"> --></figure>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">과제제출</a></li>
+                        <li><a href="#none">수업자료</a></li>
+                        <li><a href="#none" class="active">마이페이지</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 마이페이지 -->
+            <div class="revise-form-right">
+                <h2 class="title-style font-weight-500">학생 회원 정보 수정</h2>
+                <table summray="학생 회원 정보 수정" class="revise-table">
+                    <caption>학생 회원 정보 수정</caption>
+                    <colgroup>
+                        <col width="145px;">
+                        <col width="calc(100%-145px);">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">반 번호</th>
+                            <td><input type="text" value="3" class="revise-text-box class-num"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이름</th>
+                            <td><span>김셀파</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">아이디</th>
+                            <td><span>tsherpa1</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">비밀번호</th>
+                            <td><a href="#none" class="btns small">비밀번호 변경</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">휴대폰</th>
+                            <td>
+                                <select>
+                                    <option value="010">010</option>
+                                    <option value="011">011</option>
+                                    <option value="012">012</option>
+                                    <option value="013">013</option>
+                                </select>
+                                -<input type="text" value="1234" class="revise-text-box class-phone-num">
+                                -<input type="text" value="5678" class="revise-text-box class-phone-num">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">초대코드</th>
+                            <td class="cf">
+                                <input type="text" placeholder="선생님이 알려준 코드를 입력하세요." class="revise-text-box class-invite-code">
+                                <p>
+                                    초대 코드를 미입력시, 일부 서비스에 제한이 있을 수 있습니다.<br>
+                                    초대 코드를 잊어버렸을 경우, 선생님께 문의해주세요. 
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#none" class="btns mt20">확인</a>
+            </div>
+        </div>
+        <div class="revise-password-popup popup-back">
+            <div class="pass-popup-inner popup-top">
+                <div class="popup-heading">
+                    <h5>비밀번호 변경</h5>
+                    <a href="#none" class="close-btn"><img src="images/icon-close.png" alt="닫기버튼"></a>
+                </div>
+                <div class="popup-body">
+                    <p>비밀번호 변경 시 Caps Lock 키가 눌려 있지는 않은지 확인하시기 바랍니다.</p>
+                    <table summary="비밀번호 변경">
+                        <caption>비밀번호 변경</caption>
+                        <colgroup>
+                            <col width="145px;">
+                            <col width="calc(100% - 145px);">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">현재비밀번호</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">새 비밀번호(*)</th>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">새 비밀번호 확인</th>
+                                <td>
+                                    <input type="text">
+                                    <p>*영문 대/소문자+숫자+특수문자 조합 (8~20자 이내)</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="popup-btns flex-center">
+                        <a href="#none" class="btns small">확인</a>
+                        <a href="#none" class="btns small border-btn">취소</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html

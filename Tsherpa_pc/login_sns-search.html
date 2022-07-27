@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap">
+        <div role="header" data-include="header-before.html"></div>
+        <div class="login-stu-main-area">
+            <div class="login-inner">
+               <h2 class="title-style text-center">나의 SNS 계정 찾기</h2>
+               <div class="login-form">
+                    <h4>휴대폰 번호 인증을 통해 계정을 찾아 드립니다.</h4>
+                    <div class="login-search-area">
+                        <!-- 인증번호 발송 전 -->
+                        <div class="login-phone-area flex-center">
+                            <label for="login-phonenum">휴대폰 번호</label>
+                            <input type="text" id="login-phonenum" placeholder="숫자만 입력">
+                            <a href="#none" class="btns">인증 번호 발송</a>
+                        </div>
+                        <div class="login-certify-area flex-center">
+                            <label for="login-certify">인증 번호</label>
+                            <input type="text" id="login-certify" placeholder="인증 번호 6자리">
+                            <span class="disabled">03:00</span>
+                        </div>
+                        <!-- 인증번호 발송 후 -->
+                        <div class="login-phone-area flex-center">
+                            <label for="login-phonenum">휴대폰 번호</label>
+                            <input type="text" id="login-phonenum" placeholder="숫자만 입력">
+                            <a href="#none" class="btns disabled">인증 번호 발송</a>
+                        </div>
+                        <div class="login-certify-area flex-center">
+                            <label for="login-certify">인증 번호</label>
+                            <input type="text" id="login-certify" placeholder="인증 번호 6자리">
+                            <span>03:00</span>
+                        </div>
+                    </div>
+                    <!-- 인증번호 발송 하면 disabled 클래스 제거 -->
+                    <a href="#none" class="btns basic_btn large">확인</a>
+                    <a href="#none" class="btns basic_btn large disabled">확인</a>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

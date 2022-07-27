@@ -1,0 +1,53 @@
+<header>
+    <div class="inner cf">
+        <h1><a href="#none"><img src="images/mo_logo.png" alt="우리반 티셀파"></a></h1>
+        <a href="#none" class="nav_btn"><img src="images/mo_ico_menu.png" alt="메뉴버튼"></a>
+    </div>
+</header>
+<!-- 학생 팝업 -->
+<div class="menu-list-area">
+    <div class="menu-inner">
+        <div class="list-popup flex-btw">
+            <h2><a href="#none"><img src="images/mo_ic_home.png" alt="홈화면으로"></a></h2>
+            <a href="#none"><img src="images/mo_icon_close.png" alt="메뉴 닫기"></a>
+        </div>
+        <!-- 개설된 클래스 없을 때 -->
+        <figure class="none-class-box">
+            <img src="images/mo_img_class.png" alt="개설된 클래스가 없습니다. ">
+        </figure>
+        <div class="none-class-ment">
+            <strong>회원 정보 수정 페이지에서<br>초대 코드를 입력해주세요.</strong>
+            <p>초대코드는 선생님께 문의</p>
+        </div>
+        <!-- 개설된 클래스 있을 때 -->
+        <figure class="have-class-box">
+            <img src="images/3.svg" alt="서울 가산 초등학교">
+        </figure>
+        <div class="have-class-ment">
+            <p>서울 가산초등학교</p>
+            <strong>3학년 3반 3번 김셀파</strong>
+        </div>
+        <ul class="menu-list-btn">
+            <li><a href="#none" class="flex-btw">공지사항<img src="images/mo_btn_next_02.png" alt="공지사항"></a></li>
+            <li><a href="#none" class="flex-btw">과제제출<img src="images/mo_btn_next_02.png" alt="과제제출"></a></li>
+            <li><a href="#none" class="flex-btw">수업자료<img src="images/mo_btn_next_02.png" alt="수업자료"></a></li>
+            <li><a href="#none" class="flex-btw">마이페이지<img src="images/mo_btn_next_02.png" alt="학급목록"></a></li>
+        </ul>
+        <a href="#none" class="btns border-btn logout-btn">로그아웃</a>
+    </div>
+</div>
+
+<script>
+    // 메뉴 열기
+    $('.nav_btn').on('click',function(e){
+        e.preventDefault();
+        $('.menu-list-area').show();
+        $('.menu-list-area').stop().animate({'left':'0'},300);
+    });
+    // 메뉴닫기
+    $('.list-popup > a').on('click',function(e){
+        e.preventDefault();
+        $('.menu-list-area').hide(300);
+        $('.menu-list-area').stop().animate({'left':'-100%'},300);
+    });
+</script>

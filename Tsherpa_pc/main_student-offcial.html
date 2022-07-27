@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head role="head" data-include="head.html"></head>
+<body>
+    <div class="wrap">
+        <div role="header" data-include="header-tea.html"></div>
+        <div class="main-student-offcial-area">
+            <div class="inner">
+                <h2 class="title-style mb30">학생관리</h2>
+                <div class="stu-offcial-class flex-btw">
+                    <figure><img src="images/img-default-14.png" alt="1학년 1반"></figure>
+                    <div class="class-text-group flex-start">
+                        <strong>1학년 1반</strong>
+                        <p>초대코드<span>569874</span></p>
+                    </div>
+                    <div class="class-btns-offcial">
+                        <a href="#none" class="btns round">학생 계정 추가하기</a>
+                        <a href="#none" class="btns round stu-all-summit">학생 계정 일괄등록하기</a>
+                    </div>
+                </div>
+                <div class="table-top-btns flex-btw">
+                    <strong>총 인원 <span>5명</span></strong>
+                    <div class="table-btns-box">
+                        <a href="#none" class="active">번호순</a>
+                        <a href="#none">이름순</a>
+                    </div>
+                </div>
+                <!-- 등록된 학생 없을 시 -->
+                <table summary="학생관리">
+                    <caption>학생관리</caption>
+                    <colgroup>
+                        <col width="88px;">
+                        <col width="238px;">
+                        <col width="238px;">
+                        <col width="238px;">
+                        <col width="238px;">
+                        <col width="160px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">아이디</th>
+                            <th scope="col">핸드폰 번호</th>
+                            <th scope="col">비밀번호<a href="#none" class="hide-password"></a></th>
+                            <th scope="col">관리</th>
+                        </tr>
+                    </thead>
+                </table>
+                <p class="student-date-none">
+                    등록된 학생이 없습니다.<br>
+                    '학생 계정 추가하기'나 '학생 계정 일괄 등록하기'를 통해 학생을 등록해주시거나<br>
+                    직접 가입할 수 있도록 학생들에게 초대코드를 알려주세요.
+                </p>
+                <!-- 등록된 학생 있을 시 -->
+                <table summary="학생관리">
+                    <caption>학생관리</caption>
+                    <colgroup>
+                        <col width="88px;">
+                        <col width="238px;">
+                        <col width="238px;">
+                        <col width="238px;">
+                        <col width="238px;">
+                        <col width="160px;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">아이디</th>
+                            <th scope="col">핸드폰 번호</th>
+                            <th scope="col">비밀번호<a href="#none" class="hide-password show-password"></a></th>
+                            <th scope="col">관리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="offcial-num"></td>
+                            <td><input type="text" class="offcial-text-box"></td>
+                            <td><input type="text" class="offcial-text-box"></td>
+                            <td><input type="text" class="offcial-text-box"></td>
+                            <td><input type="text" class="offcial-text-box"></td>
+                            <td>
+                                <a href="#none" class="btns small">삭제</a>
+                                <a href="#none" class="btns border-btn small">취소</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="error">99</td>
+                            <td class="error">오</td>
+                            <td>student2</td>
+                            <td class="don-t-revise">-</td>
+                            <td class="error">12</td>
+                            <td>
+                                <a href="#none" class="btns small">저장</a>
+                                <a href="#none" class="btns border-btn small">취소</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>오셀파</td>
+                            <td class="don-t-revise">카카오톡 로그인</td>
+                            <td class="don-t-revise">010-4756-9988</td>
+                            <td class="don-t-revise">-</td>
+                            <td>
+                                <a href="#none" class="btns small">수정</a>
+                                <a href="#none" class="btns border-btn small">삭제</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>박셀파</td>
+                            <td class="don-t-revise">카카오톡 로그인</td>
+                            <td class="don-t-revise">010-5757-3344</td>
+                            <td class="don-t-revise">-</td>
+                            <td>
+                                <a href="#none" class="btns small">수정</a>
+                                <a href="#none" class="btns border-btn small">삭제</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>이름은열글자이내이다</td>
+                            <td>sherpa1</td>
+                            <td class="don-t-revise">-</td>
+                            <td>password950908</td>
+                            <td>
+                                <a href="#none" class="btns disabled small">수정</a>
+                                <a href="#none" class="btns border-btn small">삭제</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>오셀파</td>
+                            <td>student1</td>
+                            <td class="don-t-revise">-</td>
+                            <td>1224</td>
+                            <td>
+                                <a href="#none" class="btns disabled small">수정</a>
+                                <a href="#none" class="btns border-btn small">삭제</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="don-t-revise">5</td>
+                            <td class="don-t-revise">최셀파</td>
+                            <td><input type="text" class="offcial-text-box" value="sherpa1"></td>
+                            <td class="don-t-revise">-</td>
+                            <td><input type="text" class="offcial-text-box" value="password95908"></input></td>
+                            <td>
+                                <a href="#none" class="btns disabled small">저장</a>
+                                <a href="#none" class="btns border-btn small">취소</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="don-t-revise">6</td>
+                            <td class="don-t-revise">홍셀파</td>
+                            <td>student1</td>
+                            <td class="don-t-revise">-</td>
+                            <td class="error">13</td>
+                            <td>
+                                <a href="#none" class="btns small">저장</a>
+                                <a href="#none" class="btns border-btn small">취소</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="page-move-btns flex-center">
+                    <a href="#none" class="pprev-page not-move"></a>
+                    <a href="#none" class="prev-page not-move"></a>
+                    <a href="#none" class="page-btn active">1</a>
+                    <a href="#none" class="page-btn">2</a>
+                    <a href="#none" class="page-btn">3</a>
+                    <a href="#none" class="page-btn">4</a>
+                    <a href="#none" class="page-btn">5</a>
+                    <a href="#none" class="page-btn">6</a>
+                    <a href="#none" class="page-btn">7</a>
+                    <a href="#none" class="page-btn">8</a>
+                    <a href="#none" class="page-btn">9</a>
+                    <a href="#none" class="page-btn">10</a>
+                    <a href="#none" class="next-page"></a>
+                    <a href="#none" class="nnext-page"></a>
+                </div>
+            </div>
+        </div>
+        <div class="student-loding-popup popup-back">
+            <div class="big-popup-inner popup-top">
+                <h4 class="popup-heading">학생 관리<a href="#none" class="close-btn"><img src="/images/icon-close.png" alt="닫기"></a></h4>
+                <div class="popup-body">
+                    <p>학생 계정 일괄 등록하기</p>
+                    <ul class="loding-rule">
+                        <li><span>*</span> 학생 계정 일괄 등록 양식을 다운로드 받은 후 아래 규칙에 맞게 입력해주세요.</li>
+                        <li><span>*</span> 엑셀 파일을 업로드 한 후 아래 목록에서 결과를 확인하고, 규칙에 맞지 않는 경우 수정해주세요.</li>
+                        <li><span>*</span> 최종 결과를 등록하면 학생 관리 리스트에 노출됩니다.</li>
+                    </ul>
+                    <div class="lode-rule-box flex-start">
+                        <ul class="loding-rule">
+                            <li><span>*</span> 번호: 1~99까지 숫자만 가능</li>
+                            <li><span>*</span> 아이디: 영문 소문자, 숫자 10글자 이하</li>
+                        </ul>
+                        <ul class="loding-rule">
+                            <li><span>*</span> 이름: 한글, 영문 대/소문자 2~10글자 이내</li>
+                            <li><span>*</span> 비밀번호: 영문 소문자, 숫자 4글자 이상</li>
+                        </ul>
+                    </div>
+                    <div class="loding-downlode-btn flex-center">
+                        <a href="#none" class="btns round">EXCEL 양식 다운로드</a>
+                        <a href="#none" class="btns round">파일 업로드</a>
+                    </div>
+                    <div class="loding-table-top flex-btw">
+                        <span>총 인원 <strong>3명</strong></span>
+                        <a href="#noen" class="btns">일괄 삭제</a>
+                    </div>
+                    <!-- 업로드 전 -->
+                    <table summary="학생 계정 일괄 등록하기">
+                        <caption>학생 계정 일괄 등록하기</caption>
+                        <colgroup>
+                            <col width="77px;">
+                            <col width="175px;">
+                            <col width="175px;">
+                            <col width="175px;">
+                            <col width="76px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름</th>
+                                <th>아이디</th>
+                                <th>비밀번호<a href="#none" class="hide-password"></a></th>
+                                <th>삭제</th>
+                            </tr>
+                        </thead>
+                    </table> 
+                    <p class="data-lode-none-list">
+                        리스트가 없습니다.<br>
+                        한 번에 일괄 등록 가능한 학생 계정 수는 99개 입니다.
+                    </p>
+                    <!-- 업로드 후 -->
+                    <table summary="학생 계정 일괄 등록하기">
+                        <caption>학생 계정 일괄 등록하기</caption>
+                        <colgroup>
+                            <col width="77px;">
+                            <col width="175px;">
+                            <col width="175px;">
+                            <col width="175px;">
+                            <col width="76px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름</th>
+                                <th>아이디</th>
+                                <th>비밀번호<a href="#none" class="hide-password"></a></th>
+                                <th>삭제</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>오셀파</td>
+                                <td>sherpa1</td>
+                                <td class="error">123</td>
+                                <td><a href="#none" class="btns border-btn small">삭제</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>이름은열글자까지가능</td>
+                                <td>studentnum1</td>
+                                <td><input type="text" value="password738497"></td>
+                                <td><a href="#none" class="btns border-btn small">삭제</a></td>
+                            </tr>
+                            <tr>
+                                <td class="error">100</td>
+                                <td>최셀파</td>
+                                <td class="don-t-revise">woori1</td>
+                                <td>5678</td>
+                                <td><a href="#none" class="btns border-btn small">삭제</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="page-move-btns flex-center">
+                        <a href="#none" class="pprev-page"></a>
+                        <a href="#none" class="prev-page"></a>
+                        <a href="#none" class="page-btn">1</a>
+                        <a href="#none" class="page-btn">2</a>
+                        <a href="#none" class="page-btn">3</a>
+                        <a href="#none" class="page-btn">4</a>
+                        <a href="#none" class="page-btn">5</a>
+                        <a href="#none" class="page-btn">6</a>
+                        <a href="#none" class="page-btn">7</a>
+                        <a href="#none" class="page-btn">8</a>
+                        <a href="#none" class="page-btn">9</a>
+                        <a href="#none" class="page-btn active">10</a>
+                        <a href="#none" class="next-page not-move"></a>
+                        <a href="#none" class="nnext-page not-move"></a>
+                    </div>
+                    <a href="#none" class="btns disabled">등록하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

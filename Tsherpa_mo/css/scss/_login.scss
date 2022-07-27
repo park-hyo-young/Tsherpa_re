@@ -1,0 +1,264 @@
+// 로그인 하시겠습니까? 화면
+.login-box {
+    height: calc(100vh - 6.6rem);
+    padding: 6rem 0 0;
+    background-color: $background-color;
+    box-sizing: border-box;
+    // 환영문구
+    .login-main-title, .login-main-title > span{
+        margin-bottom: 4rem;
+        font-size: 1.6rem;
+        letter-spacing: -0.08rem;
+        text-align: center;
+        font-weight: 500;
+
+        span {
+            color: $main-color;
+        }
+    }
+    // 로그인 화면 바로가기
+    .login-shortcut {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 16rem;
+        padding: 5rem 0 4.5rem 3rem;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        
+        &::before {
+            position: absolute;
+            content: '';
+            width: 13.8rem;
+            height: 13.8rem;
+            top: -2rem;
+            right: -1.8rem;
+            border-radius: 50%;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 9rem;
+            height: 9rem;
+            bottom: -1rem;
+            right: 6.5rem;
+            border-radius: 50%;
+            opacity: 0.4;
+        }
+        &.go-teacher {
+            margin-bottom: 1.6rem;
+            background: $main-color;
+            &::before {
+                background: linear-gradient(to top, #418ac9, #5da9eb);
+            }
+            &::after {
+                background: linear-gradient(to top, #418ac9, #5da9eb);
+            }
+            > a {
+                color: $main-color;
+            }
+            figure {
+                width: 6.2rem;
+                height: 6.55rem;   
+            }
+        }
+        &.go-student {
+            margin-bottom: 6rem;
+            background: #ff7e00;
+            &::before {
+                background: linear-gradient(to top, #ff7e00, #ff9f42);
+            }
+            &::after {
+                background: linear-gradient(to top, #ff7e00, #ff9f42);
+            }
+            >a {
+                color: #ff7e00;
+            }
+            figure {
+                width: 5.55rem;
+                height: 5.55rem;
+            }
+        }
+        figure {
+            position: absolute;
+            right: 3.5rem;
+            bottom: 2.5rem;
+            z-index: 10;
+            img {
+                width: 100%;
+            }
+        }
+        // 학생/선생님 로그인
+        .login-ment {
+            margin-bottom: 1.6rem;
+            color: $white;
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: -0.1rem;
+        }
+        > a {
+            display: block;
+            width: 9rem;
+            height: 3rem;
+            border-radius: 0.6rem;
+            font-size: 1.3rem;
+            line-height: 3rem;
+            text-align: center;
+            letter-spacing: -0.02rem;
+            background-color: $white;
+        }
+    }
+}
+
+// 학생 로그인 화면
+.login-student-arer {
+    padding: 5.45rem 0 5rem;
+    .stu-login-title {
+        position: relative;
+        padding-bottom: 11.2rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: -0.09rem;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 6.8rem;
+            height: 6.8rem;
+            left: 50%;
+            bottom: 2rem;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            background: #efefef url('../images/mo_icon_login.png') center no-repeat;
+            background-size: 2.4rem;
+        }
+    }
+    .stu-login-ment{
+        margin-bottom: 1.6rem;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 2.7rem;
+        letter-spacing: -0.08rem;
+        font-weight: 500;
+    }
+    form { 
+        margin-bottom: 3.6rem;
+        .login-form{
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+    }
+    .login-forget {
+        padding: 2rem 0 2.1rem;
+        border-bottom: 1px solid $border-color;
+        color: #999;
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.6rem;
+        letter-spacing: -0.06rem;
+    }
+    .sns-login-arer {
+        padding: 2rem 0 0;
+        >.stu-login-title { 
+            padding-bottom: 2rem;
+            &::before {
+                display: none;
+            }
+        }
+        .login-forget-sns {
+            display: block;
+            width: 9.5rem;
+            margin: 0 auto;
+            padding: 2rem 0 0.25rem;
+            border-bottom: 1px solid #999;
+            color: #999;
+            font-size: 1.2rem;
+            letter-spacing: -0.06rem;
+            text-align: center;
+        }
+    }
+    .btns {
+        &.naver-btn {
+            margin-bottom: .75rem;
+        }
+    }
+}
+
+// SNS계정 찾기
+.login_found_title {
+    margin-bottom: 2.8rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $border-color;
+    text-align: center;
+    >.inner {
+        > h4 {
+            margin-bottom: 1.2rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: -0.09rem;
+        }
+        > p {
+            color: #999;
+            font-size: 1.2rem;
+            letter-spacing: -0.06rem;
+        }
+    }
+}
+.found-sns { 
+    .caritfy-grup {
+        margin-top: 1.65rem;
+        input {
+            width: calc(100% - 5.5rem);
+            margin-top: 0;
+        }
+        >span {
+            padding-right: 1.5rem;
+            font-size: 1.4rem;
+            color: #bbb;
+            letter-spacing: -0.07rem;
+        }
+    }
+    input {
+        margin-top: 1.65rem;
+    }
+
+    .basic_btn {
+        margin-top: 4rem;
+    }
+}
+.have-login {
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #999;
+    letter-spacing: -0.06rem;
+    text-align: center;
+}
+.none-sns-login {
+    padding: 0 !important;
+    &::before {
+        display: none;
+    }
+}
+.none-sns-ment {
+    position: relative;
+    margin-bottom: 4rem;
+    padding-top: 10.7rem;
+    font-size: 1.6rem;
+    color: #666;
+    line-height: 2.7rem;
+    letter-spacing: -0.08rem;
+    text-align: center;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 5.2rem;
+        height: 5.25rem;
+        top: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('../images/mo_ic_none_login.png') center no-repeat;
+        background-size: 100%
+    }
+}

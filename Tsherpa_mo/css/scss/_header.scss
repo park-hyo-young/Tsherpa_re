@@ -1,0 +1,158 @@
+header {
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 0.1rem solid $border-color;
+    h1 {
+        float: left;
+        a {
+            display: block;
+            img {
+                width: 13.05rem;
+                height: 2.2rem;
+            }
+        }
+    }
+    a {
+        display: block;
+        float: right;
+        padding-top: 0.2rem;
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+// 햄버거 버튼 눌렀을 때
+.menu-list-area {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    z-index: 200;
+    .menu-inner {
+        padding: 2.5rem 2rem 3rem;
+        background-color: $background-color;
+    }
+    .list-popup {
+        margin-bottom: 2rem;
+        border-bottom: 0;
+        a {
+            width: 2rem;
+            height: 2rem;
+            img {
+                width: 2rem;
+            }
+        }
+    }
+    .none-class-box {
+        width: 100%;
+        padding: 1.5rem 2.85rem 1.9rem 2.15rem;
+        border-radius: 1.5rem;
+        background: $main-color;
+        box-sizing: border-box;
+        img {
+            width: 100%;
+        }
+    }
+    .have-class-box {
+        width: 100%;
+        box-sizing: border-box;
+        img {
+            width: 100%;
+            border-radius: 1.5rem;
+        }
+    }
+}
+.none-class-ment, .have-class-ment {
+    margin: 2rem 0;
+    text-align: center;
+    strong {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.7rem;
+        >span {
+            margin-left: 0.8rem;
+        }
+    }
+    p, span {
+        margin-top: 0.4rem;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+    .select-box {
+        position: relative;
+        width: 15.6rem;
+        margin: 2rem auto 0;
+        > a {
+            height: 3.6rem;
+            padding-right: 2.5rem;
+            border: 0.1rem solid $main-color;
+            line-height: 3.4rem;
+            font-size: 1.4rem;
+            background: $white url('../images/mo_list_arrow.png') right 3rem center no-repeat;
+            background-size: 0.9rem 0.45rem;
+        }
+    }
+}
+.option-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: .3rem;
+    border-radius: 0.5rem;
+    background-color: $white;
+    box-shadow: 0.14rem 0.37rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+    li {
+        border-bottom: 0.1rem solid $border-color;
+        &:last-child {
+            border: 0;
+        }
+        a {
+            display: block;
+            padding: 1.3rem 0;
+            font-size: 1.4rem;
+            color: #000;
+        }
+    }
+}
+.menu-list-btn {
+    li {
+        border-bottom: 0.1rem solid $border-color;
+        &:last-child {
+            border: 0;
+        }
+        > a {
+            padding: 1.7rem 0;
+            color: #000;
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: -0.08rem;
+
+            img {
+                width: 0.55rem;
+            }
+        }
+    }
+}
+.menu-btn-group {
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    a {
+        width: calc(50% - 0.4rem);
+        height: 3.6rem;
+        margin-bottom: 0.8rem;
+        line-height: 3.6rem;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    >.border_btn {
+        line-height: 3.4rem;
+    }
+}
+.logout-btn {
+    margin-top: 7.7rem;
+    height: 3.6rem;
+    line-height: 3.4rem;
+    font-size: 1.3rem;
+}
