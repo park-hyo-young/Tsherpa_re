@@ -496,6 +496,10 @@
                             &.setting-btn {
                                 width: 40px;
                                 border: 1px solid #ccc;
+                                img {
+                                    margin-top: -6px;
+                                    vertical-align: middle;
+                                }
                             }
                         }
                     }
